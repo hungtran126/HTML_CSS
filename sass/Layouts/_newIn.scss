@@ -1,0 +1,342 @@
+.newIn{
+
+    margin-top: 60px;
+    
+    .container{
+        max-width: 300px;
+        border-bottom: none;
+        border: none;
+    }
+
+    .nav-tabs{
+        .nav-item{
+            .nav-link{
+
+                border: none;
+                color: #000;
+                transition: all .5s;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                height: 24px;
+    
+                &.active{
+                    border: none;
+                    font-size: 24px;
+                    color: #fa5238;
+                }
+    
+                &:hover{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            .carousel{
+                .carousel-inner{
+                    overflow: unset;
+                    .container{
+                        max-width: 940px;
+                        margin-left: 280px;
+                    }                  
+                    
+                    .carousel-item{
+                        
+                        transition: all .5s ease-in;
+                        
+                        position: relative;
+                        display: none;
+                        float: left;
+                        width: 100%;
+                        margin-right: -100%;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+                        transition: -webkit-transform .6s ease-in-out;
+                        transition: transform .6s ease-in-out;
+                        transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+
+                        .newIn__pre-item{
+                            position: relative;
+
+                            .newIn__item{
+                                padding: 10px;
+                                transition: all .2s;
+
+                                &:hover{
+                                    .newIn__item--top{
+                                        .newIn__item-overlayblack{
+                                            display: block;
+                                        }
+                                    }
+
+                                    .newIn__videoplayicon{
+                                        display: block;
+                                    }
+
+                                    .newIn__item--bottom{
+                                        .newIn__movieTimewithBuy{
+                                            display: none;
+                                        }
+
+                                        .newIn__item--btnBuy{
+                                            display: block;
+                                            background-color: #fb4226;
+                                        }
+                                    }
+
+                                }
+
+                                .newIn__item--top{
+                                    margin-bottom: 10px;
+                                    border-radius: 4px;
+                                    position: relative;
+                                    overflow: hidden;
+    
+                                    .newIn__item-overlayblack{
+                                        position: absolute;
+                                        display: none;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background: 0 0;
+                                        background: -webkit-linear-gradient(to top,#000,transparent 100%);
+                                        background: -o-linear-gradient(to top,#000,transparent 100%);
+                                        background: -moz-linear-gradient(to top,#000,transparent 100%);
+                                        background: linear-gradient(to top,#000,transparent 100%);
+                                    }
+                                }
+
+                                .newIn__videoplayicon{
+                                    width: 48px;
+                                    height: 48px;
+                                    position: absolute;
+                                    top: 39.5%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    z-index: 3;
+                                    background: 0 0;
+                                    border: none;
+                                    display: none;
+                                    opacity: 1;
+                                    cursor: pointer;
+
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                        border-radius: 4px;                    
+                                    }
+
+                                    &:hover{
+                                        opacity: .7;
+                                    }
+                                }
+
+                                .newIn__item-overlayType{
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 0px;
+                                    width: 80%;
+                                    pointer-events: none;
+                                    overflow: hidden;
+                                    transform: translate(-5%,-12%);
+                                    max-width: 150px;
+    
+                                    img{
+                                        display: block;
+                                        width: 100%;
+                                        border-radius: 4px;
+                                    }
+                                }
+    
+                                .newIn__item-rating{
+                                    font-size: 16px;
+                                    background-color: rgba(12,27,54,.8);
+                                    border: 1px solid #1f2e46;
+                                    border-radius: 4px;
+                                    padding: 2px;
+                                    position: absolute;
+                                    top: 22px;
+                                    right: 22px;
+                                    color: #fff;
+                                    width: 54px;
+                                    text-align: center;
+                                    line-height: 1.1;
+    
+                                    p{
+                                        margin-bottom: 0;
+                                    }
+    
+                                    .rating-star{
+                                        text-align: center;
+                                        letter-spacing: -4.5px;
+                                        img{
+                                            display: inline;
+                                            max-width: 8px;
+                                        }
+                                    }
+    
+                                }
+    
+                                .newIn__item-dateShow{
+                                    font-size: 16px;
+                                    background-color: rgba(12,27,54,.8);
+                                    border: 1px solid #1f2e46;
+                                    border-radius: 4px;
+                                    padding: 2px;
+                                    position: absolute;
+                                    bottom: 110px;
+                                    right: 22px;
+                                    color: #fff;
+    
+                                    p{
+                                        margin-bottom: 0;
+                                    }
+                                }
+    
+                                .newIn__item--bottom{
+
+                                    position: relative;
+
+                                    .newIn__item-title{
+    
+                                        display: block!important;
+                                        display: -webkit-box!important;
+                                        -webkit-line-clamp: 2;
+                                        -moz-line-clamp: 2;
+                                        -ms-line-clamp: 2;
+                                        -o-line-clamp: 2;
+                                        line-clamp: 2;
+                                        -webkit-box-orient: vertical;
+                                        -moz-box-orient: vertical;
+                                        -ms-box-orient: vertical;
+                                        -o-box-orient: vertical;
+                                        box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: normal;
+    
+                                        height: 42px;
+                                        max-height: 42px;
+                                        color: #000;
+                                        line-height: 22px;
+                                        margin-bottom: 0;
+    
+                                        .newIn__movieAge{
+                                            font-size: 14px;
+                                            border-radius: 4px;
+                                            padding: 0 5px;
+                                            color: #fff;
+                                            min-width: 33px;
+                                            text-align: center;
+                                            display: inline-block;
+                                            margin-right: 8px;
+                                            margin-bottom: 0;
+                                        }
+    
+                                        .movieAge-orange{
+                                            background-color: #fb4226;
+                                        }
+    
+                                        .movieAge-green{
+                                            background-color: #00ac4d;
+                                        }
+    
+                                        h6{
+                                            font-size: 16px;
+                                            display: inline;
+                                            color: #000;
+                                        }
+                                    }
+    
+                                    .newIn__movieTime{
+                                        font-size: 13px;
+                                        color: #4a4a4a;
+                                        margin-bottom: 15px;
+                                        margin-top: 8px;
+                                    }
+
+                                    .newIn__item--btnBuy{
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        display: none;
+                                        width: 100%;
+                                        border-radius: 4px;
+                                        transition: all .5s;
+
+                                        &:hover{
+                                            button{
+                                                background: #fb4226;
+                                            }
+                                        }
+
+                                        button{
+                                            width: 100%;
+                                            border-radius: 4px;
+                                            color: #fff;
+                                            font-size: 18px!important;
+                                            padding: 10px;
+                                            text-align: center;
+                                            background: #fb4226;
+                                            background: -webkit-linear-gradient(to left,#fb4226,#ce3017 100%);
+                                            background: -o-linear-gradient(to left,#fb4226,#ce3017 100%);
+                                            background: -moz-linear-gradient(to left,#fb4226,#ce3017 100%);
+                                            background: linear-gradient(to left,#fb4226,#ce3017 100%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .active{
+                        display: block;
+                    }
+                }
+
+                .carousel-control-prev{
+                    img{
+                        position: absolute;
+                        top: 41%;
+                        left: 220px;
+                        transform: translateY(20%);
+                        background-color: transparent;
+                        border: none;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 2;
+                        opacity: .5;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                    
+                }
+        
+                .carousel-control-next{
+
+                    img{
+                        position: absolute;
+                        top: 41%;
+                        right: 230px;
+                        transform: translateY(20%);
+                        background-color: transparent;
+                        border: none;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 2;
+                        opacity: .5;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+.booking-bar{
+    
+    display: block;
+    max-width: 940px;
+    margin: auto;
+    height: 80px;
+    position: absolute;
+    top: 610px;
+    left: 759px;
+    width: 100%;
+    transform: translate(-50%,50%);
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.3);
+    z-index: 2;
+    white-space: nowrap;
+
+    .dropdown{
+        display: inline;
+
+        .dropdown-toggle{
+            margin: -2px;
+            border-radius: 0;
+            color: #000;
+            &::after{
+                display: none;
+                position: absolute;
+                top: 22px;
+            }
+        }
+
+        .btn-lg{
+            padding: 0;
+        }
+
+        .btn{
+            font-size: 14px;
+            line-height: 1.42857143;
+            margin-top: 28px;
+            background-color: transparent;
+            color: #000;
+            cursor: pointer;
+            border-right: 1px solid rgba(238,238,238,.88);
+            padding-right: 10px;
+            padding-left: 20px;
+
+            &:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+        }
+
+        .dropdown-menu{
+            .dropdown-item{
+                display: block;
+                font-size: 14px;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: 500;
+                line-height: 1.42857143;
+                color: #333;
+                white-space: nowrap;
+                transition: al .2s;
+
+                &:hover{
+                    background-color: #60c5ef;
+                    color: #fff;
+
+                    span{
+                        background-color: #60c5ef;
+                        color: #fff;  
+                    }
+                }
+            }
+        }
+    }
+
+    .cbx__phim{
+        .dropdown{
+            .dropdown-toggle{
+                img{
+                    padding-left: 190px;
+                }
+                
+            }
+
+            .dropdown-menu{
+                .dropdown-item{
+                    width: 400px;
+                }
+            }
+        } 
+    }
+
+    .cbx__rap{
+        .dropdown{
+            .dropdown-toggle{
+                img{
+                    padding-left: 100px;
+                }
+            }
+
+            .dropdown-menu{
+                .dropdown-item{
+                    width: 300px;
+                }
+            }
+        } 
+    }
+
+    .cbx__ngay{
+        .dropdown{
+            .dropdown-toggle{
+                img{
+                    padding-left: 70px;
+                }
+            }
+
+            .dropdown-menu{
+                .dropdown-item{
+                    width: 180px;
+                    font-size: 15px;
+                    span{
+                        display: block;
+                        font-size: 11px;
+                        color: #aaa;
+                    }
+                }
+            }
+        } 
+    }
+
+    .cbx__suatchieu{
+        .dropdown{
+            .dropdown-toggle{
+                img{
+                    padding-left: 55px;
+                }
+            }
+
+            .dropdown-menu{
+                .dropdown-item{
+                    width: 155px;
+                }
+            }
+        } 
+    }
+
+    .cbx__mua{
+        .btnBuy{
+            position: absolute;
+            background-color: #4a4a4a;
+            border: none;
+            text-transform: uppercase;
+            border-radius: 4px;
+            padding: 10px 25px;
+            margin-left: 10px;
+            margin-top: 18px;
+        }
+    }
+}
+.dont-mind{
+    max-width: 940px;
+    height: 150px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('../../img/back-news.png');
+}
