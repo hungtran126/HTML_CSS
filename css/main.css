@@ -160,23 +160,23 @@ header:hover {
   color: #fff;
 }
 
-.slide {
+.slideQC {
   margin-top: 60px;
 }
 
-.slide .carousel {
+.slideQC .carousel {
   transition: all .5s ease-in;
 }
 
-.slide .carousel:hover .carousel-inner .carousel-item .carousel-caption {
+.slideQC .carousel:hover .carousel-inner .carousel-item .carousel-caption {
   display: inline !important;
 }
 
-.slide .carousel .carousel-indicators {
+.slideQC .carousel .carousel-indicators {
   bottom: 60px;
 }
 
-.slide .carousel .carousel-indicators li {
+.slideQC .carousel .carousel-indicators li {
   background-color: #d8d8d8;
   width: 12px;
   height: 12px;
@@ -191,29 +191,29 @@ header:hover {
   -ms-user-select: none;
 }
 
-.slide .carousel .carousel-indicators li.active {
+.slideQC .carousel .carousel-indicators li.active {
   background-color: #fb4226;
 }
 
-.slide .carousel .carousel-inner .carousel-item {
+.slideQC .carousel .carousel-inner .carousel-item {
   transition: all .5s ease-in;
 }
 
-.slide .carousel .carousel-inner .carousel-item .carousel-caption {
+.slideQC .carousel .carousel-inner .carousel-item .carousel-caption {
   display: none !important;
   bottom: 265px;
   transition: all .5s ease-in;
 }
 
-.slide .carousel .carousel-inner .carousel-item .carousel-caption img {
+.slideQC .carousel .carousel-inner .carousel-item .carousel-caption img {
   cursor: pointer;
 }
 
-.slide .carousel .carousel-inner .carousel-item .carousel-caption img:hover {
+.slideQC .carousel .carousel-inner .carousel-item .carousel-caption img:hover {
   opacity: .7;
 }
 
-.slide .carousel .carousel-inner .carousel-item .backgroundLinear {
+.slideQC .carousel .carousel-inner .carousel-item .backgroundLinear {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -221,7 +221,7 @@ header:hover {
   top: 0;
 }
 
-.slide .carousel .carousel-control-prev img {
+.slideQC .carousel .carousel-control-prev img {
   position: absolute;
   top: 45%;
   left: 15px;
@@ -237,7 +237,7 @@ header:hover {
   background-size: contain;
 }
 
-.slide .carousel .carousel-control-next img {
+.slideQC .carousel .carousel-control-next img {
   position: absolute;
   top: 45%;
   right: 12px;
@@ -745,7 +745,7 @@ header:hover {
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url("../img/back-news.png");
+  background-image: url("../../img/back-news.png");
 }
 
 .address {
@@ -1048,7 +1048,7 @@ header:hover {
 .App {
   width: 100%;
   height: 700px;
-  background-image: url("../img/backapp.jpg");
+  background-image: url("../../img/backapp.jpg");
   background-size: cover;
 }
 
