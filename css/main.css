@@ -341,6 +341,10 @@ header:hover {
   font-size: 24px;
 }
 
+.newIn .tab-content {
+  margin-top: 50px;
+}
+
 .newIn .tab-content .tab-pane .carousel .carousel-inner {
   overflow: unset;
 }
